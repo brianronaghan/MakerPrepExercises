@@ -101,8 +101,8 @@ for (var pos in revPol){
 var complex_object ={
  string: "I'm string",
  number: 42,
- adjs_as_obj: {brian: "normal string", patrick: "expensive", ronaghan: "chick magnet"},
- adjectives_array: ["normal string", "expensive", "last string"],
+ adjs_as_obj: {brian: "strings as pieces of object", patrick: "expensive", ronaghan: "chick magnet"},
+ adjectives_array: ["normal array of strings", "no definers", "last string"],
  random_obj: {word: "batman", num: 42, good: true, cock(){console.log("hi function in the random_obj");}}
 };
 
