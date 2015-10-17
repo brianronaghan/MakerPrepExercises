@@ -2,6 +2,7 @@
 
 console.log("lesson 10 functions");
 alert("separate JS is working.");
+
 // exc 1
 function printDate(){
   console.log(new Date());
@@ -72,8 +73,13 @@ function factoralOfN (number){
 }
 
 console.log(factoralOfN(4));
-// how do i do this using recursion? come back to that
+console.log(factoralOfN(5));
+console.log(factoralOfN(10));
+console.log(factoralOfN(7));
 
+
+
+// how do i do this using recursion? come back to that
 function countBy (countBy, countUpTo){
   for(var x = 1; x<=countUpTo; x++){
     if(x % countBy === 0){
