@@ -2,56 +2,6 @@ console.log("lesson 13");
 
 // each map filter reduce
 
-function each (collection, callback){
-  if(Array.isArray(collection)){
-    for (var x=0; x<collection.length;x++){
-      callback(collection[x]);
-    }
-  }
-  else{
-    for (var spot in collection){
-      callback(collection[spot]);
-    }
-  }
-}
-
-function map(collection, actionFunc){
-  var results = [];
-  each(collection, function(spotVal){
-    results.push(actionFunc(spotVal));
-  });
-  return results;
-}
-
-function filter(collection, predicateFunc){
-  var filtered = [];
-  each(collection, function(currentVal){
-    if(predicateFunc(currentVal)){
-      filtered.push(currentVal);
-    }
-  });
-  return filtered;
-}
-
-function reduce(collection, actionFunc, initalVal){
-  var accum, index;
-  if(arguments.length>2){
-    accum = initalVal;
-    index = 0;
-  }
-  else{
-    accum = collection[0];
-    index = 1;
-  }
-  while(index<collection.length){
-    accum =actionFunc(accum,collection[index]);
-    index++;
-  }
-  return accum;
-}
-
-
-
 
 
 
